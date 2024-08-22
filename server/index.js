@@ -1,16 +1,15 @@
 import express from "express";
 import router from "./routes/routes.js";
-import cors from 'cors';
+import cors from "cors";
 import DBConnection from "./database/db.js";
 
 const app = express();
 
-const cors = require('cors');
-
-// app.use(cors());
+// Use CORS and specify the frontend origin
 app.use(cors({
-  origin: 'https://drop-link-delta.vercel.app/'
+  origin: 'https://drop-link-delta.vercel.app'
 }));
+
 app.use("/", router);
 
 const PORT = 8000;
