@@ -6,9 +6,8 @@ import DBConnection from "./database/db.js";
 const app = express();
 
 const cors = require('cors');
-// Allow all origins
+
 app.use(cors());
-// Allow specific origin(s)
 app.use(cors({
   origin: 'https://drop-link-delta.vercel.app/'
 }));
