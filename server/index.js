@@ -7,7 +7,7 @@ const app = express();
 
 const cors = require('cors');
 
-app.use(cors());
+// app.use(cors());
 app.use(cors({
   origin: 'https://drop-link-delta.vercel.app/'
 }));
