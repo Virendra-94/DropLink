@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://drop-link-dusky.vercel.app';
+const API_URL = 'https://droplink-backend.onrender.com';
 
 export const uploadFile = async (data) => {
     try {
