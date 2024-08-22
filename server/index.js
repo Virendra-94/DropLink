@@ -7,7 +7,7 @@ const app = express();
 
 // Use CORS and specify the frontend origin
 app.use(cors({
-  origin: ["https://drop-link-client.vercel.app"],
+  origin: ["https://droplink-u09w.onrender.com"],
   methods: ["POST", "GET"],
   credentials: true
 }
