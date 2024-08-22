@@ -11,38 +11,20 @@ function App() {
 
   const logo = 'https://cdni.iconscout.com/illustration/premium/thumb/cloud-uploading-illustration-download-in-svg-png-gif-file-formats--data-hosting-upload-web-pack-business-illustrations-3728472.png';
 
-  // useEffect(() => {
-  //   const getImage = async () => {
-  //     if (file) {
-  //       const data = new FormData();
-  //       data.append("name", file.name);
-  //       data.append("file", file);
-
-  //       let response = await uploadFile(data);
-  //       setResult(response.path);
-  //     }
-  //   };
-  //   getImage();
-  // }, [file]);
-
   useEffect(() => {
     const getImage = async () => {
       if (file) {
         const data = new FormData();
         data.append("name", file.name);
         data.append("file", file);
-  
+
         let response = await uploadFile(data);
-        
-        if (response && response.path) {
-          setResult(response.path);
-        } else {
-          console.error('Error: No path in response');
-        }
+        setResult(response.path);
       }
     };
     getImage();
   }, [file]);
+
 
   const onUploadClick = () => {
     fileInputRef.current.click();
