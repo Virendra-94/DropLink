@@ -91,9 +91,9 @@ function App() {
           </div>
         </div>
       </div>
-      // <div className='footer'>
-      //   Developed by <a href="https://www.linkedin.com/in/virendra-kumar25/" target="_blank" rel="noopener noreferrer">Virendra</a>
-      // </div>
+      <div className='footer'>
+        <a href="https://www.linkedin.com/in/virendra-kumar25/" target="_blank" rel="noopener noreferrer"></a>
+      </div>
     </>
   );
 }
